@@ -23,11 +23,11 @@
             <div class="navbar-end">
                 <a class="navbar-item {% if page.layout == 'default' %}is-active{% endif %}"
                     href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">HOME</a>
-                <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#about">ABOUT</a>
-                <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#contact">CONTACT</a>
-                <a class="navbar-item {% if page.layout == 'blog' %}is-active{% endif %}"
-                    href="{{site.url}}{{site.baseurl}}/blog">BLOG</a>
-                {% include dropdown.html %}
+                <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#project">전시 안내</a>
+                <a class="navbar-item {% if page.layout == 'artist' %}is-active{% endif %}"
+                    href="{{site.url}}{{site.baseurl}}/artist">청주, 예술가</a>
+                <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#participant">참여 예술인</a>
+                <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#about">청주민예총</a>
             </div>
 
         </div>

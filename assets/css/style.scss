@@ -5,6 +5,19 @@
 
 /* Customization Start */
 
+.content img {
+  max-width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#backtoprevious {
+  font-size: 1.3em;
+  flex-grow: unset;
+  margin-bottom: 1rem;
+}
+
 #navbar {
     min-height: 4.00rem;
 }
@@ -32,6 +45,7 @@ a.navbar-item, a.navbar-link {
 
 .hero-body {
     padding-top: 4rem;
+    padding-bottom: 0rem;
 }
 
 .hero-body .container {
@@ -50,7 +64,7 @@ img.hero-biglogo {
     font-family: serif;
     font-size: 1.8em;
     text-align: left;
-    line-height: 350%;
+    line-height: 300%;
     padding-top: 5%;
 }
 
@@ -64,6 +78,84 @@ img.hero-logobar {
     min-height: 49px;
 }
 
+img.project-title {
+  float: none;
+  position: absolute;
+  left: 20px;
+}
+
+p.project-description {
+  clear: both;
+  padding-top: 70px;
+  text-align: left;
+  font-size: 1.2em;
+
+}
+
+.columns.is-centered {
+  float: left;
+  padding-top: 0px;
+  max-width: 900px;
+}
+
+.visitor-map {
+  float: left;
+  max-width: 400px;
+  height: auto;
+  margin-left: 5%;
+}
+
+#project-card {
+  width: 450px;
+}
+
+.card-content {
+  padding: 1.0rem;
+}
+
+.participant {
+  text-align: left;
+  font-size: 1em;
+  word-break: keep-all;
+}
+
+h1.participant {
+  font-family: serif;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h2.participant {
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+
+h3.participant {
+  font-weight: bold;
+  padding-top: 0.5rem;
+  padding-bottom: 0.6rem;
+}
+
+hr.participant {
+  height: 5px;
+}
+
+#about .hero-body {
+  padding-bottom: 4rem;
+}
+#about .column h1{
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+#about .column p{
+  font-size: 1.2em;
+  text-align: center;
+  padding-bottom: 0.3rem;
+}
 
 /*Customization End */
 
@@ -121,7 +213,7 @@ a.navbar-item.is-active {
         bottom: 48px;
         left: 0px;
         position: absolute;
-        opacity: 0.50;
+        opacity: 0.45;
         content: "";
     }
 }
@@ -137,9 +229,6 @@ a.navbar-item.is-active {
         max-width: 20vmax;
         margin: auto;
 
-        img {
-            border: 0.25rem dotted black;
-        }
     }
 
     a {
