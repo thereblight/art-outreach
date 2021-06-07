@@ -25,7 +25,7 @@ layout: compress
       </div>
     </div>
         <div class="container has-text-centered has-background-grey-darker" id="backtoprevious">
-          <a href="{{ post.categories | truncate: 2, '' | prepend: 'artist/' | append: '#current' | relative_url }}" class="button has-text-weight-normal">돌아가기</a>
+          <a href="{{ page.categories | first | truncate: 2, '' | prepend: 'artist/' | append: '#current' | relative_url }}" class="button has-text-weight-normal">돌아가기</a>
         </div>
   </section>
 </body>
