@@ -23,7 +23,7 @@
             <div class="navbar-end">
                 <a class="navbar-item {% if page.layout == 'default' %}is-active{% endif %}"
                     href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">HOME</a>
-                <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#project">전시 안내</a>
+                <a class="navbar-item {% if page.layout == 'page_info' %}is-active{% endif %}" href="{{site.url}}{{site.baseurl}}/#project">전시 안내</a>
                 <a class="navbar-item {% if page.layout == 'artist' %}is-active{% endif %}"
                     href="{{site.url}}{{site.baseurl}}/artist">청주, 예술가</a>
                 <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#participant">참여 예술인</a>

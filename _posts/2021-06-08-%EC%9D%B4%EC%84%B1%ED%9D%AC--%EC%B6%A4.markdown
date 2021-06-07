@@ -1,0 +1,13 @@
+---
+layout: post
+title: "이성희 - 춤"
+categories: ["02. 정북동 토성"]
+date: "2021-06-08 01:57:10 +0900"
+---
+<video class="post-video" controls>
+
+    <source src='{{ "assets/videos/02. 정북동 토성/09.mp4" | relative_url }}'
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>

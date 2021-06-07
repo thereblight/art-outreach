@@ -13,9 +13,13 @@
 }
 
 #backtoprevious {
-  font-size: 1.3em;
+  font-size: 1.1em;
   flex-grow: unset;
-  margin-bottom: 1rem;
+  margin: 1rem auto !important;
+}
+
+.backbutton {
+  padding: 0.5rem;
 }
 
 #navbar {
@@ -61,11 +65,15 @@ img.hero-biglogo {
 .subtitle {
     float: left;
     white-space: nowrap;
-    font-family: serif;
+    font-family: "NanumMyeongjo", serif;
     font-size: 1.8em;
     text-align: left;
     line-height: 300%;
     padding-top: 5%;
+}
+
+.hero-button {
+  clear: both;
 }
 
 .hero-footer {
@@ -113,6 +121,10 @@ p.project-description {
   padding: 1.0rem;
 }
 
+#page-section .content {
+  word-break: keep-all;
+}
+
 .participant {
   text-align: left;
   font-size: 1em;
@@ -120,7 +132,7 @@ p.project-description {
 }
 
 h1.participant {
-  font-family: serif;
+  font-family: "NanumMyeongjo", serif;
   font-size: 2em;
   font-weight: bold;
 }
@@ -155,6 +167,59 @@ hr.participant {
   font-size: 1.2em;
   text-align: center;
   padding-bottom: 0.3rem;
+}
+
+#blog .level {
+  padding-top: 2rem;
+  margin-left: 20px;
+}
+
+.post-video {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.category-group {
+  margin: 0.4rem 100px;
+}
+
+.category-group .has-background-black {
+  margin: 0.6rem auto;
+}
+
+.category-open {
+  margin: 0.4rem 100px;
+  text-align: left;
+}
+
+.category-open .has-background-black {
+  margin: 1.2rem auto;
+}
+
+.category-group:hover {
+    background-color: rgba($color: #000, $alpha: 0.25) !important;
+    transform: scale(1.01) !important;
+    transition-duration: 0.3s;
+}
+
+#blog-card h1 {
+  font-size: 1.4em;
+}
+
+#current {
+  padding-top: 70px;
+}
+
+.category-open .button {
+  text-align: right;
+  float: right;
+  padding: 0.1em 1.0em;
+  margin-bottom: 0.5em;
+}
+
+.more-padding {
+  padding: 1rem 2rem !important;
 }
 
 /*Customization End */
@@ -447,7 +512,6 @@ a.navbar-item.is-active {
         margin: auto 2.5vmax;
     }
     a {
-        text-decoration: underline;
     }
     #title {
         text-decoration: none;

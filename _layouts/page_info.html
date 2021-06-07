@@ -12,9 +12,7 @@ layout: compress
         <div class="hero-body">
             <div class="container has-text-centered" id="page-section">
                 <div class="section">
-                    <h1 class="title is-1 is-uppercase has-text-weight-bold">
-                        {{page.title}}
-                    </h1>
+                    <img src="{{ page.titleimage }}">
                     <hr class="has-background-black">
                     <div class="content is-marginless">
                         {{ content }}
@@ -23,11 +21,10 @@ layout: compress
             </div>
         </div>
         <div class="container has-text-centered has-background-grey-darker" id="backtoprevious">
-          <a class="has-text-white" href="{{site.url}}{{site.baseurl}}/#project">돌아가기</a>
+          <a href="{{ '../#project' | relative_url }}" class="button has-text-weight-normal">돌아가기</a>
         </div>
     </section>
     <!--Footer begins here-->
-    {% include footer_info.html %}
 </body>
 
 </html>

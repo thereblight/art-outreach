@@ -1,0 +1,70 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+  {% include navbar.html %}
+
+  <section class="hero is-fullheight" id="blog">
+    <div class="hero-body">
+      <div class="container">
+        {% include blogpage-heading.html %}
+      </div>
+    </div>
+    <div id="results-container"></div>
+    <!--Blog Cards Section-->
+    {% assign sorted_cats = site.categories | sort %}
+    {% for category in sorted_cats %}
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+
+    {% if page.title == category_name %}
+    <div id="current"></div>
+    <div class="category-open">
+
+        <h4 class="category-head title is-4 has-text-weight-bold">{{ category_name }}</h4>
+        <a href="{{ '../artist' | relative_url }}" class="button has-text-weight-normal">접기</a>
+      <hr class="has-background-black">
+    </div>
+
+    {% assign sorted_posts = site.categories[category_name] | sort: "title" %}
+      {% for post in sorted_posts %}
+      {% include blog-card.html %}
+      {% endfor %}
+
+
+    {% else %}
+
+    <div class="category-group">
+
+      <a href="{{ category_name | truncate: 2, '' | prepend: 'artist/' | append: '#current' | relative_url }}">
+        <h4 class="category-head title is-4 has-text-weight-bold">{{ category_name }}</h4>
+        <hr class="has-background-black">
+      </a>
+    </div>
+
+    {% endif %}
+
+    {% endfor %}
+  </section>
+  <br>
+  <!--Footer begins here-->
+  <script src="{{site.url}}{{site.baseurl}}/assets/js/simple-jekyll-search.js"></script>
+
+  <script>
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('search'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '{{site.url}}{{site.baseurl}}/search.json',
+      searchResultTemplate: '<div style="border: 0.15rem dashed black" class="searchResult columns has-text-centered" id="blog-card"><div class="column is-marginless is-paddingless is-one-third-desktop is-one-third-fullhd is-one-third-tablet"></div><a href="{url}"><div class="column has-text-left-desktop has-text-left-tablet"><h1 class="title is-size-4-touch">{title}</h1></div></a></div>',
+      noResultsText: '<div class="subtitle has-text-centered is-uppercase" style="text-aline: center;"></div>',
+      fuzzy: true,
+    });
+  </script>
+</body>
+
+</html>

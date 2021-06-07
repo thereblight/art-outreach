@@ -1,0 +1,13 @@
+---
+layout: post
+title: "김태철 - 버나놀이"
+categories: ["05. 무심천"]
+date: "2021-06-08 02:12:27 +0900"
+---
+<video class="post-video" controls>
+
+    <source src='{{ "assets/videos/05. 무심천/02.mp4" | relative_url }}'
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>

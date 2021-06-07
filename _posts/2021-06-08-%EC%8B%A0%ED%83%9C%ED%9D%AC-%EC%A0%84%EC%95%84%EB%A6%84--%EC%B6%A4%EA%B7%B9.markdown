@@ -1,0 +1,13 @@
+---
+layout: post
+title: "신태희, 전아름 - 춤극"
+categories: ["03. 초정행궁"]
+date: "2021-06-08 02:04:32 +0900"
+---
+<video class="post-video" controls>
+
+    <source src='{{ "assets/videos/03. 초정행궁/08.mp4" | relative_url }}'
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>

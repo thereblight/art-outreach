@@ -8,6 +8,8 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 
+assets/videos/
+
 ### local bundle folder
 .bundle/
 vendor

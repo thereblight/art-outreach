@@ -1,4 +1,0 @@
----
-title: Artist
-layout: artist
----

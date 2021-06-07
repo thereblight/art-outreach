@@ -1,0 +1,13 @@
+---
+layout: post
+title: "안희주 - 가야금"
+categories: ["08. 상당산성"]
+date: "2021-06-08 02:27:41 +0900"
+---
+<video class="post-video" controls>
+
+    <source src='{{ "assets/videos/08. 상당산성/02.mp4" | relative_url }}'
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
