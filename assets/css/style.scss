@@ -3,6 +3,71 @@
 
 @import "main.scss";
 
+/* Customization Start */
+
+#navbar {
+    min-height: 4.00rem;
+}
+
+.navbar-brand, .navbar-burger {
+    height: 4.00rem;
+}
+
+.navbar.is-black {
+  background-color: #303030;
+}
+
+.navbar-item, .has-background-black {
+  background-color: #303030 !important;
+}
+
+a.navbar-item, a.navbar-link {
+  font-size: 0.8em;
+}
+
+.navbar-brand {
+    font-family: "Daum Regular";
+    font-size: 1.8em;
+}
+
+.hero-body {
+    padding-top: 4rem;
+}
+
+.hero-body .container {
+}
+
+img.hero-biglogo {
+    float: right;
+}
+
+.hero-text {
+}
+
+.subtitle {
+    float: left;
+    white-space: nowrap;
+    font-family: serif;
+    font-size: 1.8em;
+    text-align: left;
+    line-height: 350%;
+    padding-top: 5%;
+}
+
+.hero-footer {
+    background-color: #303030;
+}
+
+img.hero-logobar {
+    object-fit: none;
+    vertical-align: middle;
+    min-height: 49px;
+}
+
+
+/*Customization End */
+
+
 #navbar {
     opacity: 0.95;
 }
@@ -37,7 +102,6 @@ a.navbar-item.is-active {
     border-color: grey;
 }
 
-
 #hero {
     background: rgb(0, 0, 0);
     background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.75) 100%);
@@ -50,14 +114,14 @@ a.navbar-item.is-active {
         background-image: url({{site.heroimage}});
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: fill;
         background-attachment: fixed;
         top: 0px;
         right: 0px;
-        bottom: 0px;
+        bottom: 48px;
         left: 0px;
         position: absolute;
-        opacity: 0.25;
+        opacity: 0.50;
         content: "";
     }
 }
