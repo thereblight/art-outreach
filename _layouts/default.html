@@ -19,14 +19,14 @@ layout: compress
     var scroll = this.scrollY;
     var item = document.getElementsByClassName('navbar-item');
     /* console.log(scroll); */
-    if (scroll < 800) {
+    if (scroll < 700) {
       item[1].classList.add('is-active');
       item[2].classList.remove('is-active');
       item[3].classList.remove('is-active');
       item[4].classList.remove('is-active');
       item[5].classList.remove('is-active');
     }
-    if (scroll > 800 && scroll < 1600) {
+    if (scroll > 700 && scroll < 1600) {
       item[1].classList.remove('is-active');
       item[2].classList.add('is-active');
       item[3].classList.remove('is-active');
