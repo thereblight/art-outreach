@@ -218,11 +218,48 @@ hr.participant {
   margin-bottom: 0.5em;
 }
 
-.more-padding {
-  padding: 1rem 2rem !important;
+.text-on-bottom {
+  font-size: 1.0em;
+  font-weight: bold;
+  text-align: left;
+  padding: 0rem 1rem !important;
+  align-self: flex-end;
+  flex-grow: 1;
 }
 
-/*Customization End */
+.add-banner {
+  padding: 5rem 1rem;
+}
+
+.text-with-background {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+}
+
+.category-head-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.category-head-icon {
+}
+
+.blog-card-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.participant-image {
+  max-width: 600px;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  float: right;
+}
+
+/************************Customization End ******************************/
 
 
 #navbar {
